@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535291080 source:C:\sources\consoleDrawing.git\consoleDrawing\main.cpp
+	<iostream>
+	<windows.h>
+	<string>
+
