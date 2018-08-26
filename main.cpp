@@ -6,8 +6,9 @@ using namespace std;
 const int MAX_HEIGHT=20;
 const int MIN_HEIGHT=0;
 const unsigned int REDRAW_SPEED = 100;
+const char TITLE[] = {"Drawing sample"};
 const string SYMBOL = "   ";
-const string TEXT = "Hello world!";
+const string MOVING_TEXT = "Hello world!";
 //global variables
 bool moveDown = true;
 int position = 0;
@@ -30,7 +31,7 @@ void draw(){
         position--;
     }
 
-    cout << textPrefix << TEXT << endl;
+    cout << textPrefix << MOVING_TEXT << endl;
 }
 
 void redrawSpeed(){
@@ -44,6 +45,7 @@ void clearScreen(){
 
 int main()
 {
+    SetConsoleTitle( TEXT(TITLE));
     while(true){
         draw();
         redrawSpeed();
